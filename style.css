@@ -447,6 +447,7 @@ header .right .imagem img{
     margin-top: 40px;
     text-align:start;
     font-weight: 300;
+    margin-left: 70px;
 }
 
 #About .box p, span{
@@ -457,6 +458,7 @@ header .right .imagem img{
     font-weight: 500;
     font-size: 14px;
     font-style: italic;
+    margin-left: 70px;
 }
 
 /* #### Fim do About #### */
