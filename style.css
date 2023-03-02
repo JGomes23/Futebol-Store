@@ -107,8 +107,10 @@ html,body{
 }
 
 img{
-    width: 70%;
+    width: 100%;
     object-fit: contain;
+    max-width: 100%;
+    height: 80%;
 }
 
 button{
@@ -226,6 +228,48 @@ button:hover{
     background: #68c9ef;
 }
 
+
+.slider{
+    overflow: hidden;
+
+}
+.slider > .slider-content{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 90%;
+    transition: all 500ms ease;
+
+}
+
+.slider > .slider-content > .slider-item {
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+.slider > input:nth-child(1):checked ~ .slider-content{
+    transform: translateX(0%);
+}
+
+.slider > input:nth-child(2):checked ~ .slider-content{
+    transform: translateX(-100%);
+}
+.slider > input:nth-child(3):checked ~ .slider-content{
+    transform: translateX(-200%);
+}
+
+.slider > input:nth-child(4):checked ~ .slider-content{
+    transform: translateX(-300%);
+}
+
+
+
+
+
+
+
+
+
+
 body::-webkit-scrollbar {
     width: 12px;
 }
@@ -330,6 +374,7 @@ header .left h1{
     font-weight: 400;
     text-shadow: 0 0 5px #848790;
     padding: 0 40px;
+    margin-top: 50px;
 }
 
 header .left p{
@@ -349,16 +394,19 @@ header button{
 
 header .right .imagem{
     width: 70%;
-    height: 100%;
+    height: 50%;
     display: flex;
     justify-content: center;
     transition: 1s ease;
+    
 }
 
 header .right .imagem img{
     width: 100%;
     object-fit: contain;
     margin-bottom: 60px;
+    height: 70%;
+    margin-top: 130px;
 }
 
 /* #### Fim do Header #### */
